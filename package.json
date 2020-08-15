@@ -1,0 +1,47 @@
+{
+  "name": "xlsx-data-reader",
+  "version": "0.0.0",
+  "main": "dist/index.umd.min.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "father doc dev",
+    "doc": "father doc build",
+    "deploy": "father doc deploy",
+    "test": "father test --coverage",
+    "cov": "father test --coverage",
+    "build": "father-build",
+    "lint": "npm run lint:es && npm run lint:ts && npm run lint:style",
+    "lint:es": "eslint --ext .js --ext .jsx . --fix",
+    "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\" --fix",
+    "lint:style": "stylelint \"src/**/*.less\" --fix",
+    "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.12.0",
+    "eslint-config-ali": "^5.0.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.14.2",
+    "father": "^2.29.2",
+    "father-build": "^1.8.0",
+    "np": "^5.0.3",
+    "prettier": "^1.18.2",
+    "tslint": "^5.18.0",
+    "tslint-config-ali": "^0.2.4",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.3.3333"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "xlsx": "^0.16.6"
+  }
+}

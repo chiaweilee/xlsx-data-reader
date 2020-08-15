@@ -1,0 +1,32 @@
+{
+  "extends": ["ali/es6", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "no-var": "off",
+    "one-var": "off",
+    "object-shorthand": "off",
+    "no-cond-assign": "off",
+    "no-multi-assign": "off",
+    "no-unused-vars": "off",
+    "no-void": "off",
+    "block-scoped-var": "off",
+    "no-bitwise": "off",
+    "no-shadow": "off",
+    "no-plusplus": "off",
+    "no-lone-blocks": "off",
+    "no-useless-escape": "off",
+    "no-nested-ternary": "off",
+    "no-param-reassign": "off",
+    "no-return-assign": "off",
+    "no-self-compare": "off",
+    "no-empty": "off",
+    "new-cap": "off",
+    "prefer-const": "off",
+    "eqeqeq": "off",
+    "no-unused-expressions": "error"
+  }
+}
